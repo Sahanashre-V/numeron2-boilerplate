@@ -81,6 +81,7 @@ function Timer(){
     time.innerText=timeStart;
     ClearReferenceTime=setInterval(function(){
         timeStart-=1;
+        time.innerText=timeStart;
         if (timeStart==0){
             localStorage.setItem("score",score);
             window.location.href="./gameover.html"
