@@ -14,7 +14,7 @@ let plusBtn = document.getElementById("plus");
 let minusBtn = document.getElementById("minus");
 let mulBtn = document.getElementById("mul");
 let divideBtn = document.getElementById("divide");
-let modulusBtn = document.getAnimations("modulus");
+let modulusBtn = document.getElementById("modulus");
 
 // Iteration 4: Creating a variable for number 3 and a variable for storing the html element with the Id "number3"
 let number3Div = document.getElementById("number3");
@@ -31,7 +31,7 @@ function randomise(){
         num1Random=num2Random;
         num2Random=tempVariable;
     }
-    if (num1Random==0 || num2Random){
+    if (num1Random==0 || num2Random==0){
         randomise();
         //becoz if one number is zero in case of division and modulus it will be difficult and it will give undefined.
     }
